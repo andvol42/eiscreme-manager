@@ -2,6 +2,8 @@ Meet the Minds Day Eiscreme-Manager
 
 Installationnsanleitung
 
+<b>Anmerkung: Ports 3000 und 8080 müssen frei sein</b>
+
 Über Docker Compose
 
 - Im Projekt-Root befindet sich eine docker-compose.yml, über die sich das Backend und Frontend einfach starten lässt
