@@ -1,0 +1,84 @@
+localhost:8080/eiscrememanager/eiscremesorten
+POST
+    {
+        "name": "Karamell",
+        "kategorie": "Sahne-Eis",
+        "zutaten": [
+            "Vanille",
+            "Karamell"
+        ],
+        "kcal": 134,
+        "preis": 2.50
+    }
+
+    {
+       "name": "NeueSorte",
+            "kategorie": "Sahne-Eis",
+            "zutaten": [
+                "Vanille",
+                "Karamell"
+            ],
+            "kcal": 134,
+            "preis": 2.50
+    }
+
+        {
+           "name": "",
+                "kategorie": "Sahne-Eis",
+                "zutaten": [
+                    "Vanille",
+                    "Karamell"
+                ],
+                "kcal": 134,
+                "preis": 2.50
+        }
+
+GET
+[
+    {
+        "id": 1,
+        "name": "Bourbon Vanille",
+        "kategorie": "Sahne-Eis",
+        "zutaten": [
+            "Kokosfett",
+            "Zucker",
+            "Vanilleschoten",
+            "Milch",
+            "Schlagsahne",
+            "Bourbon-Vanilleextrakt"
+        ],
+        "kcal": 208,
+        "preis": 3.65
+    },
+    {
+        "id": 2,
+        "name": "Chocolate Chips",
+        "kategorie": "Sahne-Eis",
+        "zutaten": [
+            "Zucker",
+            "Milch",
+            "Kakao",
+            "Schlagsahne"
+        ],
+        "kcal": 219,
+        "preis": 3.65
+    }
+]
+
+localhost:8080/eiscrememanager/config/kategorien
+GET
+
+[
+    {
+        "label": "SAHNEEIS",
+        "wert": "Sahne-Eis"
+    },
+    {
+        "label": "FRUCHTEIS",
+        "wert": "Frucht-Eis"
+    },
+    {
+        "label": "WASSEREIS",
+        "wert": "Wasser-Eis"
+    }
+]

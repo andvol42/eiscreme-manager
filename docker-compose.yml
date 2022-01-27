@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  eiscreme-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+  eiscreme-client:
+    depends_on:
+      - eiscreme-service
+    build:
+      context: ./src/main/frontend
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      #- 3001:3000
+      - 80:80
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - frontend
+networks:
+  backend:
+  frontend:
