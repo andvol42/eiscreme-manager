@@ -7,6 +7,8 @@ Installationnsanleitung
 - Im Projekt-Root befindet sich eine docker-compose.yml, über die sich das Backend und Frontend einfach starten lässt
 - Vor dem Ausführen der compose muss das Backend allerdings über den Maven Wrapper nochmal gebaut werden
 
+Eine shell öffnen und folgendes ausführen: 
+
 1. Execute-Berechtigungen an den Maven Wrapper vergeben, im Project-Root:
          
          chmod +x mvnw
